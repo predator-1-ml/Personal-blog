@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% block title %}Contact Page{% endblock title %}AJJU PAGE
+{% block body %}
+
+    <div class='container-fluid px-0'>
+        <img src="https://source.unsplash.com/1200x400/?phone,Contact" class="d-block w-100" alt="...">
+        <h3 class='text-center my-4'> Contact US 
+        </h3>
+        
+    </div>
+    <div class='container my-5'>
+        <form method='post' action='/contact'>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Your Name</label>
+                <input  class="form-control" id="exampleFormControlInput1" name='name' placeholder="John Stephen ">
+            </div>
+        
+            <div class="mb-3">
+                <label for="exampleFormControlInput2" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" name='email' placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput3" class="form-label">Contact Number</label>
+                <input class="form-control" id="exampleFormControlTextarea1" name='phone' placeholder='123456789'>
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlText" class="form-label">Describe</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" name='Describe' ></textarea>
+            </div>
+            <button type="button" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    
+    
+
+
+
+{% endblock body %}
